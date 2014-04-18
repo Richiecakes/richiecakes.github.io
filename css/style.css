@@ -14,7 +14,7 @@ body {
 }
 
 #note-app {
-	background-color: #eee;
+	background: url("../images/cork_1.png");
 	-moz-border-radius: 0 0 20px 20px;
 	-webkit-border-radius: 0 0 20px 20px;
 	border-radius: 0 0 20px 20px;
@@ -138,7 +138,7 @@ body {
 
 footer {
 	height: 100px;
-	background-color: #ddd;
+	background: url("../images/cork_1.png");
 	-moz-border-radius: 0 0 20px 20px;
 	-webkit-border-radius: 0 0 20px 20px;
 	border-radius: 0 0 20px 20px;
