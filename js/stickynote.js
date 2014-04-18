@@ -3,12 +3,14 @@ $(function() {
 	var Note = Backbone.Model.extend({
 
 		defaults: function() {
+			var d = new Date()
+
 			return {
 				title: "New note",
-				content: "Add text here",
-				oder: Notes.nextOrder(),
+				content: "Add text here...",
+				order: Notes.nextOrder(),
 				colour: "#FF9",
-				date: new Date()
+				date: d.toDateString()
 			};
 		}
 
@@ -25,7 +27,7 @@ $(function() {
 			return this.last().get('order') + 1;
 		},
 
-		comparator: 'order'
+		comparator: "order"
 
 	});
 
@@ -53,6 +55,7 @@ $(function() {
 		},
 
 		render: function() {
+			console.log(this.model.get("order"));
 			this.$el.html(this.template(this.model.toJSON()));
 			this.contentInput = this.$(".content-edit");
 			this.titleInput = this.$(".title-edit");

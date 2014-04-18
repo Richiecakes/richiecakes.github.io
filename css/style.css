@@ -39,16 +39,28 @@ body {
 	padding: 20px;
 }
 
+.tooltip {
+	display: none;
+}
+
 .top-view {
 	float: left;
 	width: 180px;
 	height: 160px;
-	margin: 10px;
+	margin: 10px 10px 20px 10px;
 	border-top: 7px ridge #CCC;
 	padding: 10px;
 	box-shadow: 5px 5px 5px #888;
 	-moz-box-shadow: 5px 5px 5px #888;
 	-webkit-box-shadow: 5px 5px 5px #888;
+}
+
+.top-view:hover .tooltip {
+	display: block;
+	position: relative;
+	top: -200px;
+	right: -30px;
+	font-family: monospace;
 }
 
 .editing-title .title-view {
