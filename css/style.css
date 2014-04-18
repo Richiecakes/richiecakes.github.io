@@ -9,8 +9,11 @@ body {
 
 #note-app {
 	background-color: #eee;
+	-moz-border-radius: 0 0 20px 20px;
+	-webkit-border-radius: 0 0 20px 20px;
 	border-radius: 0 0 20px 20px;
 	box-shadow: 0 0 5px 5px #888;
+	-moz-box-shadow: 0 0 5px 5px #888;
 	-webkit-box-shadow: 0 0  25px 2px #666;
 }
 
@@ -44,6 +47,7 @@ body {
 	border-top: 7px ridge #CCC;
 	padding: 10px;
 	box-shadow: 5px 5px 5px #888;
+	-moz-box-shadow: 5px 5px 5px #888;
 	-webkit-box-shadow: 5px 5px 5px #888;
 }
 
@@ -117,6 +121,8 @@ body {
 footer {
 	height: 100px;
 	background-color: #ddd;
+	-moz-border-radius: 0 0 20px 20px;
+	-webkit-border-radius: 0 0 20px 20px;
 	border-radius: 0 0 20px 20px;
 }
 
