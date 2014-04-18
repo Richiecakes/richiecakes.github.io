@@ -11,6 +11,11 @@
 		<header>
 			<h1>Sticky Notes</h1>
 			<input id="new-note" type="text" placeholder="Enter a title for a new note..." maxlength="15">
+			<select name="colours" id="colours">
+				<option value="#FF6">Yellow</option>
+				<option value="#96f89b">Green</option>
+				<option value="#96dcf8">Blue</option>
+			</select>
 		</header>
 		<section id="main">
 			<div id="note-list"></div>
@@ -27,7 +32,7 @@
 	<script src="js/stickynote.js" type="text/javascript"></script>
 	<script type="text/template" id="note-template">
 
-		<div class="top-view">
+		<div class="top-view" style="background-color: <%- colour %>">
 			<div class="title-view">
 				<label><%- title %></label>
 				<a class="destroy"></a>

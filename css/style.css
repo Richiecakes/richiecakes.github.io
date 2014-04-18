@@ -26,6 +26,12 @@ body {
 	text-align: center;
 }
 
+#colours {
+	font-size: 24px;
+	padding: 6px;
+	color: #999;
+}
+
 #main {
 	padding: 20px;
 }
@@ -34,9 +40,8 @@ body {
 	float: left;
 	width: 180px;
 	height: 160px;
-	background-color: #FF9;
 	margin: 10px;
-	border-top: 7px ridge #DD7;
+	border-top: 7px ridge #CCC;
 	padding: 10px;
 	box-shadow: 5px 5px 5px #888;
 	-webkit-box-shadow: 5px 5px 5px #888;

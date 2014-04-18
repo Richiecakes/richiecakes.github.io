@@ -7,7 +7,7 @@ $(function() {
 				title: "New note",
 				content: "Add text here",
 				oder: Notes.nextOrder(),
-				colour: "#FFFFFF",
+				colour: "#FF9",
 				date: new Date()
 			};
 		}
@@ -121,6 +121,7 @@ $(function() {
 			this.listenTo(Notes, 'reset', this.addAll);
 			this.listenTo(Notes, 'all', this.render);
 
+			this.colours = this.$("#colours")
 			this.footer = this.$("footer");
 			this.main = $("main");
 
@@ -153,7 +154,11 @@ $(function() {
 			if (e.keyCode != 13) return;
 			if (!this.input.val()) return;
 
-			Notes.create({title: this.input.val()});
+			Notes.create({
+				title: this.input.val(),
+				colour: this.colours.val()
+			});
+
 			this.input.val('');
 		}
 
