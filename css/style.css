@@ -7,6 +7,12 @@ body {
 	margin: 0 auto;
 }
 
+.twitter-share-button {
+	padding: 10px;
+	display: inline;
+	position: absolute;
+}
+
 #note-app {
 	background-color: #eee;
 	-moz-border-radius: 0 0 20px 20px;
@@ -18,7 +24,6 @@ body {
 }
 
 #note-app header {
-	padding-top: 10px;
 	text-align: center;
 }
 
