@@ -7,7 +7,7 @@ $(function() {
 
 			return {
 				title: "New note",
-				content: "Add text here...",
+				content: "",
 				order: Notes.nextOrder(),
 				colour: "#FF9",
 				date: d.toDateString()
