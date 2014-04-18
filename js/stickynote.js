@@ -146,7 +146,7 @@ $(function() {
 
 		addOne: function(note) {
 			var view = new NoteView({model: note});
-			this.$("#note-list").append(view.render().el);
+			this.$("#note-list").prepend(view.render().el);
 		},
 
 		addAll: function() {
