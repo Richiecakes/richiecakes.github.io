@@ -1,0 +1,129 @@
+html, body {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body {
+	width: 80%;
+	margin: 0 auto;
+}
+
+#note-app {
+	background-color: #eee;
+	border-radius: 0 0 20px 20px;
+	box-shadow: 0 0 5px 5px #888;
+	-webkit-box-shadow: 0 0  25px 2px #666;
+}
+
+#note-app header {
+	padding-top: 10px;
+	text-align: center;
+}
+
+#new-note {
+	width: 360px;
+	padding: 6px;
+	font-size: 24px;
+	text-align: center;
+}
+
+#main {
+	padding: 20px;
+}
+
+.top-view {
+	float: left;
+	width: 180px;
+	height: 160px;
+	background-color: #FF9;
+	margin: 10px;
+	border-top: 7px ridge #DD7;
+	padding: 10px;
+	box-shadow: 5px 5px 5px #888;
+	-webkit-box-shadow: 5px 5px 5px #888;
+}
+
+.editing-title .title-view {
+	display: none;
+}
+
+.title-view {
+	height: 20px;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+.title-view .destroy {
+	width: 16px;
+	height: 16px;
+	float: right;
+	cursor: pointer;
+	background: url("../images/close.png");
+}
+
+.title-edit {
+	display: none;
+}
+
+.editing-title .title-edit {
+	display: block;
+	height: 20px;
+	text-align: center;
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+.title-view .destroy:hover {
+	margin-top: 1px;
+}
+
+.content-view {
+	height: 140px;
+	overflow: hidden;
+}
+
+.content-view p {
+	margin: 0;
+}
+
+.content-edit {
+	display: none;
+}
+
+.editing-content .content-view {
+	display: none;
+}
+
+.editing-content .content-edit {
+	display: block;
+	width: 100%;
+	height: 135px;
+	resize: none;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 16px;
+}
+
+#break {
+	height: 15px;
+	clear: both;
+}
+
+footer {
+	height: 100px;
+	background-color: #ddd;
+	border-radius: 0 0 20px 20px;
+}
+
+.note-count {
+	color: #666;
+	font-size: 26px;
+	text-align: center;
+	padding-top: 20px;
+}
+
+#credits {
+	text-align: center;
+	margin-top: 15px;
+	color: #ccc;
+}
