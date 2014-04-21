@@ -78,12 +78,8 @@ $(function() {
 
 		closeContent: function() {
 			var value = this.contentInput.val();
-			if(!value) {
-				this.clear();
-			} else {
-				this.model.save({content: value});
-				this.$el.removeClass("editing-content");
-			}
+			this.model.save({content: value});
+			this.$el.removeClass("editing-content");
 		},
 
 		editTitle: function() {
